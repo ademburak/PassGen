@@ -16,5 +16,5 @@ public class PassController {
     public PassResponse doit(@RequestParam(value="pass") String pass, @RequestParam(value="key") String key) {
         return new PassResponse(PassUtil.encodeAES(pass, key));
     }
-    
+
 }
