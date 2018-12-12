@@ -14,6 +14,7 @@ public class PassController {
 
     @RequestMapping("/doit")
     public PassResponse doit(@RequestParam(value="pass") String pass, @RequestParam(value="key") String key) {
+        System.out.println("Request received");
         return new PassResponse(PassUtil.encodeAES(pass, key));
     }
 
