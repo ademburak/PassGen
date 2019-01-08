@@ -1,4 +1,4 @@
-# PassGen first
+# PassGen second
 
 To run the application use following command
 
